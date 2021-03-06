@@ -1,39 +1,39 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://suheeeee-dev.netlify.app/',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: 'Suheeeee.Dev',
+  subtitle: 'Dev blog for me.',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: '',
   useKatex: false,
   menu: [
     {
-      label: 'Articles',
+      label: 'Post',
       path: '/'
     },
     {
-      label: 'About me',
+      label: 'Series',
       path: '/pages/about'
     },
     {
-      label: 'Contact me',
+      label: 'Tag',
       path: '/pages/contacts'
     }
   ],
   author: {
-    name: 'John Doe',
+    name: 'suheeeee',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'Beginner to Junior Developer.\nInterested in FE/DS/AI',
     contacts: {
       email: '',
       facebook: '#',
       telegram: '#',
       twitter: '#',
-      github: '#',
+      github: 'suheeeee',
       rss: '',
       vkontakte: '',
       linkedin: '#',
