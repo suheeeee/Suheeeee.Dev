@@ -1,0 +1,30 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.title {
+  @include line-height(1.65);
+  @include margin-top(2.25);
+  @include margin-bottom(0);
+  max-width: $layout-post-width;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__title {
+    font-size: $typographic-base-font-size * 2;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+@include breakpoint-md {
+  .title {
+    padding: 0;
+
+    &__title {
+      font-size: $typographic-base-font-size * 3;
+      @include line-height(2.25);
+      @include margin-top(2.25);
+      @include margin-bottom(1.5)
+    }
+  }
+}

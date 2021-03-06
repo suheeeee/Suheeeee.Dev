@@ -1,8 +1,9 @@
 // @flow strict
 import React from 'react';
 import { Link } from 'gatsby';
-import Author from './Author';
 import Comments from './Comments';
+import Title from './Title';
+import PostInfo from './PostInfo';
 import Content from './Content';
 import Meta from './Meta';
 import Tags from './Tags';
@@ -22,18 +23,15 @@ const Post = ({ post }: Props) => {
     <div className={styles['post']}>
       <Link className={styles['post__home-button']} to="/">All Articles</Link>
 
-      <div className={styles['post__content']}>
-        <Content body={html} title={title} />
-      </div>
+      <Title title={title} />
+      {tags && tagSlugs && <PostInfo date={date} tags={tags} tagSlugs={tagSlugs} />}
 
-      <div className={styles['post__footer']}>
-        <Meta date={date} />
-        {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
-        <Author />
+      <div className={styles['post__content']}>
+        <Content body={html}/>
       </div>
 
       <div className={styles['post__comments']}>
-        <Comments postSlug={slug} postTitle={post.frontmatter.title} />
+        <Comments/>
       </div>
     </div>
   );
