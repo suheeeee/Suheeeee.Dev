@@ -1,32 +1,3 @@
-// // @flow strict
-// import React from 'react';
-// import ReactDisqusComments from 'react-disqus-comments';
-// import { useSiteMetadata } from '../../../hooks';
-
-// type Props = {
-//   postTitle: string,
-//   postSlug: string
-// };
-
-// const Comments = ({ postTitle, postSlug }: Props) => {
-//   const { url, disqusShortname } = useSiteMetadata();
-
-//   if (!disqusShortname) {
-//     return null;
-//   }
-
-//   return (
-//     <ReactDisqusComments
-//       shortname={disqusShortname}
-//       identifier={postTitle}
-//       title={postTitle}
-//       url={url + postSlug}
-//     />
-//   );
-// };
-
-// export default Comments;
-
 import React, { createRef, useLayoutEffect } from 'react';
 const src = 'https://utteranc.es/client.js';
 const repo = 'suheeeee/Suheeeee.Dev';
@@ -35,8 +6,8 @@ export interface IUtterancesProps {
     repo: string;
 }
 
-const Utterances: React.FC<IUtterancesProps> = React.memo(({ }) => {
-    const containerRef = createRef<HTMLDivElement>();
+const Utterances: React.FC<IUtterancesProps> = React.memo(() => {
+    const containerRef = createRef();
 
     useLayoutEffect(() => {
         const utterances = document.createElement('script');
