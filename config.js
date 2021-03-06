@@ -26,8 +26,8 @@ module.exports = {
   ],
   author: {
     name: 'suheeeee',
-    photo: '/photo.jpg',
-    bio: 'Beginner to Junior Developer.\nInterested in FE/DS/AI',
+    photo: '/avatar.png',
+    bio: 'Junior or maybe Beginner Developer.\nInterested in FE/DS/AI',
     contacts: {
       email: '',
       facebook: '#',
