@@ -2,7 +2,7 @@
 title: "A Brief History of Typography"
 date: "2016-02-02T22:40:32.169Z"
 template: "post"
-draft: truefont-family: RIDIBatang;
+draft: true
 slug: "a-brief-history-of-typography"
 category: "Design Inspiration"
 tags:
