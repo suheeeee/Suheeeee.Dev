@@ -24,7 +24,6 @@ https://github.com/vitaly-t/pg-promise/wiki<br>
 <br>
 
 ## init
----
 ```javascript
 const pgp = require('pg-promise')({
   promiseLib: promise
@@ -49,10 +48,7 @@ const db = pgp(cn);
 <br>
 
 ## Database function for running query
----
 http://vitaly-t.github.io/pg-promise/Database.html
-
-<br>
 
 ### any
 0 이상의 결과(row)를 반환하는 쿼리
@@ -283,7 +279,7 @@ db.tx(t => {
 함수가 reject 될 시 발생하는 에러. api 문서에서 각 함수의 하단부에 어떤 값으로 리턴될지 명시되어 있다.<br>
 http://vitaly-t.github.io/pg-promise/errors.QueryResultError.html
 
-<img src="./query-result-error.png" width=500px>
+![query-result-error](./query_result_error.png)
 
 ```javascript
 db.one('SELECT name FROM Users where name=\'xxx\'', [], c => +c.count)
@@ -312,8 +308,6 @@ db.one('SELECT name FROM Users where name=\'xxx\'', [], c => +c.count)
 <br>
 
 ## Helpers
----
-
 ### update 
 update(data, columns, table, options), 하나 혹은 배열 객체에 대한 UPDATE 쿼리를 생성한다.
 
