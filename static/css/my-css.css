@@ -1,0 +1,38 @@
+code[class*="language-text"] {
+    white-space: normal;
+    
+}
+
+:not(pre) > code[class*="language-text"]{
+    background-color: #fbf1c7;
+    color: #504945;
+}
+
+@font-face {
+  font-family: "RIDIBatang";
+  src: url("./fonts/RIDIBatang.otf");
+}
+
+body {
+    font-family: RIDIBatang;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: RIDIBatang;
+}
+
+table {
+    width: 95%;
+    border-top: 1px solid #504945;
+    border-collapse: collapse;
+}
+
+th{
+    border-bottom: 2px solid #504945;
+    padding: .25rem .5rem .25rem .5rem;
+}
+
+td {
+    border-bottom: 1px solid #504945;
+    padding: .25rem .5rem .25rem .5rem;
+}
