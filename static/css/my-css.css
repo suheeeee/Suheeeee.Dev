@@ -1,6 +1,7 @@
+@import "./typography.css";
+
 code[class*="language-text"] {
     white-space: normal;
-    
 }
 
 :not(pre) > code[class*="language-text"]{
@@ -8,17 +9,12 @@ code[class*="language-text"] {
     color: #504945;
 }
 
-@font-face {
-  font-family: "RIDIBatang";
-  src: url("./fonts/RIDIBatang.otf");
-}
-
 body {
-    font-family: RIDIBatang;
+    font-family: "RIDIBatang";
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: RIDIBatang;
+    font-family: "RIDIBatang";
 }
 
 table {
