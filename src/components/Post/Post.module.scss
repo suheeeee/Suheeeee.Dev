@@ -2,14 +2,16 @@
 @import '../../assets/scss/mixins';
 
 .post {
+  // lost-column: 7/12;
+
   &__footer {
-    max-width: $layout-post-width;
+    // max-width: $layout-post-width;
     margin: 0 auto;
     padding: 0 15px;
   }
 
   &__comments {
-    max-width: $layout-post-width;
+    // max-width: $layout-post-width;
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -39,8 +41,16 @@
 
 }
 
+@include breakpoint-sm {
+  .post {
+    lost-column: 7/12;
+  }
+}
+
 @include breakpoint-md {
   .post {
+    lost-column: 2/3;
+
     &__footer {
       padding: 0;
     }

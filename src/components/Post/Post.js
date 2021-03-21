@@ -21,7 +21,7 @@ const Post = ({ post }: Props) => {
 
   return (
     <div className={styles['post']}>
-      <Link className={styles['post__home-button']} to="/">All Articles</Link>
+      {/* <Link className={styles['post__home-button']} to="/">All Articles</Link> */}
 
       <Title title={title} />
       {tags && tagSlugs && <PostInfo date={date} tags={tags} tagSlugs={tagSlugs} />}

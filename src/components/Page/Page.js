@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import styles from './Page.module.scss';
 
 type Props = {
-  title?: string,
+  title: string,
   children: React.Node
 };
 
@@ -12,6 +12,9 @@ const Page = ({ title, children }: Props) => {
   useEffect(() => {
     pageRef.current.scrollIntoView();
   });
+
+  console.log('😈', title)
+  console.log('😈', children)
 
   return (
     <div ref={pageRef} className={styles['page']}>

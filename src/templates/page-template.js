@@ -20,7 +20,7 @@ const PageTemplate = ({ data }: Props) => {
   const { title: pageTitle, description: pageDescription = '', socialImage } = frontmatter;
   const metaDescription = pageDescription || siteSubtitle;
   const socialImageUrl = socialImage?.publicURL;
-
+  
   return (
     <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
       <Sidebar />

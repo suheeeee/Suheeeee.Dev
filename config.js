@@ -15,13 +15,13 @@ module.exports = {
       label: 'Post',
       path: '/'
     },
+    // {
+    //   label: 'Categories',
+    //   path: '/categories'
+    // },
     {
-      label: 'Series',
-      path: '/pages/about'
-    },
-    {
-      label: 'Tag',
-      path: '/pages/contacts'
+      label: 'Tags',
+      path: '/tags'
     }
   ],
   author: {
@@ -30,14 +30,14 @@ module.exports = {
     bio: 'Junior or maybe Beginner Developer.\nInterested in FE/DS/AI',
     contacts: {
       email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
+      facebook: '',
+      telegram: '',
+      twitter: '',
       github: 'suheeeee',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: '',
+      instagram: '',
       line: '',
       gitlab: '',
       weibo: '',
