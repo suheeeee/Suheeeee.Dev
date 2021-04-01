@@ -25,7 +25,6 @@ const Post = ({ post }: Props) => {
 
       <Title title={title} />
       {tags && tagSlugs && <PostInfo date={date} tags={tags} tagSlugs={tagSlugs} />}
-
       <div className={styles['post__content']}>
         <Content body={html}/>
       </div>

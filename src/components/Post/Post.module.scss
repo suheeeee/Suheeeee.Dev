@@ -43,13 +43,13 @@
 
 @include breakpoint-sm {
   .post {
-    lost-column: 7/12;
+    lost-column: 8/12;
   }
 }
 
 @include breakpoint-md {
   .post {
-    lost-column: 2/3;
+    lost-column: 3/4;
 
     &__footer {
       padding: 0;

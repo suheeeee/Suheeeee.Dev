@@ -5,10 +5,12 @@
   align-items: flex-start;
   justify-content: space-between;
   display: flex;
-  @include margin-bottom(0);
-  max-width: $layout-post-width;
-  margin-left: auto;
-  margin-right: auto;
+  @include margin-bottom(1);
+  @include margin-top(2);
+  // max-width: $layout-post-width;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: darkgray;
 
 
   &__date {
