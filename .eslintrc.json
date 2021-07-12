@@ -17,6 +17,9 @@
         "graphql": true
     },
     "rules": {
+      "no-multiple-empty-lines" : 0,
+      "no-trailing-spaces": [2, { "skipBlankLines": true }],
+      "linebreak-style": 0,
       "comma-dangle": 0,
       "import/imports-first": 0,
       "global-require": 0,

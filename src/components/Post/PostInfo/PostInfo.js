@@ -1,7 +1,7 @@
 // @flow strict
 import React from 'react';
 import styles from './PostInfo.module.scss';
-import Tags from '../Tags'
+import Tags from '../Tags';
 
 type Props = {
   date: string,

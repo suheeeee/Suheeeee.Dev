@@ -10,8 +10,7 @@ type Props = {
   }[]
 };
 
-const Menu = ({ menu }: Props) => {
-  return (
+const Menu = ({ menu }: Props) => (
     <nav className={styles['menu']}>
       <ul className={styles['menu__list']}>
         {menu.map((item) => (
@@ -27,6 +26,6 @@ const Menu = ({ menu }: Props) => {
         ))}
       </ul>
     </nav>
-)};
+);
 
 export default Menu;

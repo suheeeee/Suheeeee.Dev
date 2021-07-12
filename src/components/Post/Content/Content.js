@@ -6,7 +6,7 @@ type Props = {
   body: string
 };
 
-const Content = ({ body}: Props) => (
+const Content = ({ body }: Props) => (
   <div className={styles['content']}>
     <div className={styles['content__body']} dangerouslySetInnerHTML={{ __html: body }} />
   </div>

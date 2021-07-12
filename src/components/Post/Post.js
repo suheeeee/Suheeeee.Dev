@@ -1,12 +1,9 @@
 // @flow strict
 import React from 'react';
-import { Link } from 'gatsby';
 import Comments from './Comments';
 import Title from './Title';
 import PostInfo from './PostInfo';
 import Content from './Content';
-import Meta from './Meta';
-import Tags from './Tags';
 import styles from './Post.module.scss';
 import type { Node } from '../../types';
 
@@ -16,7 +13,7 @@ type Props = {
 
 const Post = ({ post }: Props) => {
   const { html } = post;
-  const { tagSlugs, slug } = post.fields;
+  const { tagSlugs } = post.fields;
   const { tags, title, date } = post.frontmatter;
 
   return (

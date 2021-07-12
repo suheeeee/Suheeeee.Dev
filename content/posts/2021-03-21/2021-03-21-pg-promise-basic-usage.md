@@ -4,7 +4,7 @@ date: "2021-03-21T16:26:32.169Z"
 template: "post"
 draft: false
 slug: "pg-promise-basic-usage"
-category: "pg-promise"
+category: "node.js"
 tags:
   - "pg-promise"
 description: "pg-promise 기본 사용법"

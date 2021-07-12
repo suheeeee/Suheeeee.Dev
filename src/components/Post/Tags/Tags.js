@@ -9,8 +9,7 @@ type Props = {
 };
 
 
-const Tags = ({ tags, tagSlugs }: Props) => {
-  return (
+const Tags = ({ tags, tagSlugs }: Props) => (
     <ul className={styles['tags__list']}>
       {tagSlugs && tagSlugs.map((slug, i) => (
         <li className={styles['tags__list-item']} key={tags[i]}>
@@ -20,7 +19,6 @@ const Tags = ({ tags, tagSlugs }: Props) => {
         </li>
       ))}
     </ul>
-  )
-};
+);
 
 export default Tags;

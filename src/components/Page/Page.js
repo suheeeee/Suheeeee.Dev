@@ -13,8 +13,8 @@ const Page = ({ title, children }: Props) => {
     pageRef.current.scrollIntoView();
   });
 
-  console.log('😈', title)
-  console.log('😈', children)
+  console.log('😈', title);
+  console.log('😈', children);
 
   return (
     <div ref={pageRef} className={styles['page']}>
