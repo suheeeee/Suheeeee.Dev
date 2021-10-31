@@ -1,4 +1,4 @@
-/** 
+/**
  * Generic
  */
 html {
@@ -29,7 +29,7 @@ h6 {
 }
 
 h1 {
-  font-size: $typographic-base-font-size * 2.5;
+  font-size: $typographic-base-font-size * 2;
   @include line-height(2);
   @include margin-top(4);
   @include margin-bottom(1);
@@ -110,7 +110,7 @@ strong {
 
 ul {
   list-style: square;
-  @include margin-bottom(1);
+  @include margin-bottom(0.5);
 
   & li {
     padding: 0 5px;
@@ -121,26 +121,25 @@ ul {
 
 p {
   @include line-height(1);
-  @include margin-bottom(1);
+  @include margin-bottom(0.5);
 }
 
 
 blockquote {
   @include padding(0, 2, 0, 1);
-  font-style: italic;
 
-  border-left: 3px solid #00CC8F;
+  // border-left: 3px solid #00CC8F;
   color: #1a1a1a;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-style: italic;
+  font-family: D2Coding, Times, "Times New Roman", serif;
+  // font-style: italic;
   line-height: 1.8em;
-  padding: 1em 2em; 
+  padding: 1em 2em;
   position: relative;
   transition: .2s border ease-in-out;
   z-index: 0;
   background-color: #f0f0f0;
 
-    
+
   cite{
     display: block;
     font-size: 0.75em;
