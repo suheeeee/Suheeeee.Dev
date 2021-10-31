@@ -7,6 +7,7 @@ module.exports = {
   pathPrefix: siteConfig.pathPrefix,
   siteMetadata: {
     url: siteConfig.url,
+    siteUrl: "https://suheeeee-dev.netlify.app",
     title: siteConfig.title,
     subtitle: siteConfig.subtitle,
     copyright: siteConfig.copyright,
@@ -159,7 +160,7 @@ module.exports = {
           {
             site {
               siteMetadata {
-                siteUrl: url
+                siteUrl
               }
             }
             allSitePage(
